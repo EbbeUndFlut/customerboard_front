@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Guard from './components/Guard';
 import Shop from './pages/Shop';
+import CustomerDetail from './pages/customer/CustomerDetail';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route element={<Guard />}>
             <Route path='/home' element={<Home />} />
             <Route path='/shop' element={<Shop />} />
+            <Route path='/detail/:id' element={<CustomerDetail />} />
           </Route>
 
         </Routes>
